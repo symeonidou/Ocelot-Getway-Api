@@ -27,6 +27,18 @@
       "UpstreamPathTemplate": "/api/perfumes{id}",
       "UpstreamHttpMethod": [ "GET" ]
     },
+    {
+      "DownstreamPathTemplate": "/perfumes{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7163
+        }
+      ],
+      "UpstreamPathTemplate": "/api/perfumes{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
 
     //PERFUME ORDERS API
     {
@@ -50,9 +62,22 @@
           "Port": 7257
         }
       ],
-      "UpstreamPathTemplate": "/api/perfumeorders{id}",
+      "UpstreamPathTemplate": "/api/perfumeorders",
       "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/perfumeorders{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7257
+        }
+      ],
+      "UpstreamPathTemplate": "/api/perfumeorders",
+      "UpstreamHttpMethod": [ "DELETE" ]
     }
+
 
 
 
