@@ -14,7 +14,6 @@
       "UpstreamPathTemplate": "/api/perfumes",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
     },
-
     {
       "DownstreamPathTemplate": "/perfumes{id}",
       "DownstreamScheme": "https",
@@ -77,7 +76,6 @@
       "UpstreamPathTemplate": "/api/perfumeorders{id}",
       "UpstreamHttpMethod": [ "DELETE" ]
     }
-
   ],
   "GlobalConfiguration": {
     "BaseUrl": "https://localhost:5021"
